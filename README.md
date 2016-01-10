@@ -36,14 +36,12 @@ Drag Me
 -------
 
 <p>Clicking <a href="javascript: (function() { var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js'; var s=document.createElement('script'); document.getElementsByTagName('head')[0].appendChild(s); s.onload = function(script) { if (typeof jQuery === 'undefined') { console.log(jQueryPath + ' loaded but jQuery still undefined'); } else { j$ =jQuery.noConflict(); console.log(jQueryPath + ' loaded and j$ = jQuery.noConflict() called'); } }; s.setAttribute('type','text/javascript'); s.setAttribute('src', jQueryPath); })();"
->jQuerify</a> - see its code below - will insert jQuery 2.2.0 into your tab.
-The link can be dragged to your bookmarks.</p>
+>*jQuerify*</a> - see its code below - will insert jQuery 2.2.0 into your tab.
+The *jQuerify* link can be dragged to your bookmarks.</p>
 
-The *jQuerify* link above will not render when README.md is rendered directly by github, that's apparently to prevent possible script injections. So you can also open up README.md from rawgit, and doing so, may (or may not) have the internal html code presented correctly as a link. At the moment, I am guessing not, so failing that, the second link is to an html version of the file, also served by rawgit.com.
+Now, if this page is served from Github,the *jQuerify* link above will not render when README.md is rendered, to prevent possible script injections. And so I've created a file, jQuerify.html which contains the draggable links and you can open that with the link below to rawgit.com.
 
-[rawgit: README.md](https://rawgit.com/jerryasher/jQuerify/master/README.md) contains the bookmarklet as a link that can be dragged to your browser bar, and if that doesn't work, try
-
-[README.html](https://rawgit.com/jerryasher/jQuerify/master/README.html) contains the bookmarklet as a link that can be dragged to your browser bar.
+[rawgit.com: jQuerify.html](https://rawgit.com/jerryasher/jQuerify/master/jQuerify.html) contains the bookmarklet as a link that can be dragged to your browser bar.
 
 Lessons for me
 --------------
