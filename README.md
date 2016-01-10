@@ -23,7 +23,7 @@ Completely rewritten so that I could understand how it works, and reordered to r
     })();
 </code></pre>
 
-[README.html](README.html) contains the bookmarklet as a link that can be dragged to your browser bar.
+[README.html](https://rawgit.com/jerryasher/jQuerify/master/README.html) contains the bookmarklet as a link that can be dragged to your browser bar.
 
 Since I rewrote this from scratch, I am placing this implementation under The GNU General Public License v3.0. See LICENSE for details
 
