@@ -4,16 +4,16 @@
   <title>A Bookmarklet to insert jQuery into your tab</title>
 </head>
 <body>
-  
+
 <h2>A Bookmarklet to insert jQuery into your tab</h2>
 <p>Clicking <a href="javascript: (function() { var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js'; var s=document.createElement('script'); document.getElementsByTagName('head')[0].appendChild(s); s.onload = function(script) { if (typeof jQuery === 'undefined') { console.log(jQueryPath + ' loaded but jQuery still undefined'); } else { j$ =jQuery.noConflict(); console.log(jQueryPath + ' loaded and j$ = jQuery.noConflict() called'); } }; s.setAttribute('type','text/javascript'); s.setAttribute('src', jQueryPath); })();"
             >jQuery</a> - see its code below - will insert jQuery 2.2.0 into your tab.
   The link can be dragged to your bookmarks.</p>
 <pre><code>
-  javascript: (function() { 
+  javascript: (function() {
     var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js';
     var s=document.createElement('script');
-    document.getElementsByTagName('head')[0].appendChild(s);    
+    document.getElementsByTagName('head')[0].appendChild(s);
     s.onload = function(script) {
             if (typeof jQuery === "undefined") {
                 console.log(jQueryPath + 'loaded but jQuery still undefined');
@@ -26,14 +26,13 @@
     s.setAttribute('src', jQueryPath);
     })();
 </code></pre>
-
 
 <p>Clicking <a href="javascript: (function() { var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js'; var s=document.createElement('script'); s.onload = function(script) { if (typeof jQuery === 'undefined') { console.log(jQueryPath + ' loaded but jQuery still undefined'); } else { j$ =jQuery.noConflict(); console.log(jQueryPath + ' loaded and j$ = jQuery.noConflict() called'); } }; s.setAttribute('type','text/javascript'); s.setAttribute('src', jQueryPath); document.getElementsByTagName('head')[0].appendChild(s);})();"
             >jQuery Alternate Order</a> - see its code below - will insert jQuery 2.2.0 into your tab.
   The link can be dragged to your bookmarks.</p>
 Other order, document append last
 <pre><code>
-  javascript: (function() { 
+  javascript: (function() {
     var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js';
     var s=document.createElement('script');
     s.onload = function(script) {
@@ -46,9 +45,10 @@ Other order, document append last
     };
     s.setAttribute('type','text/javascript');
     s.setAttribute('src', jQueryPath);
-    document.getElementsByTagName('head')[0].appendChild(s);    
+    document.getElementsByTagName('head')[0].appendChild(s);
     })();
 </code></pre>
 
 </body>
 </html>
+
