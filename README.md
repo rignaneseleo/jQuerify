@@ -16,7 +16,7 @@ And here's what I came up with:
 
 <pre><code>
   javascript: (function() { 
-    var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js';
+    var jQueryPath = 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js';
     var s=document.createElement('script');
     document.getElementsByTagName('head')[0].appendChild(s);
     s.onload = function(script) {
@@ -64,7 +64,7 @@ Alternate order
 Other order, document append last
 <pre><code>
   javascript: (function() { 
-    var jQueryPath = 'https://code.jquery.com/jquery-2.2.0.js';
+    var jQueryPath = 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js';
     var s=document.createElement('script');
     s.onload = function(script) {
             if (typeof jQuery === "undefined") {
